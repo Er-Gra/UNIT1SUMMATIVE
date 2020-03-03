@@ -26,32 +26,336 @@ public class MultipleChoice extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jOptionPane1 = new javax.swing.JOptionPane();
+        GUIPanel = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
+        lblInstructions = new javax.swing.JLabel();
+        lblQ1 = new javax.swing.JLabel();
+        txtAnswer1 = new javax.swing.JTextField();
+        lblPossibleAnswers = new javax.swing.JLabel();
+        lblQ2 = new javax.swing.JLabel();
+        txtAnswer2 = new javax.swing.JTextField();
+        txtAnswer3 = new javax.swing.JTextField();
+        lblPossibleAnswers2 = new javax.swing.JLabel();
+        lblQ3 = new javax.swing.JLabel();
+        lblPossibleAnswers3 = new javax.swing.JLabel();
+        lblQ4 = new javax.swing.JLabel();
+        lblPossibleAnswers4 = new javax.swing.JLabel();
+        txtAnswer4 = new javax.swing.JTextField();
+        lblQ5 = new javax.swing.JLabel();
+        lblPossibleAnswers5 = new javax.swing.JLabel();
+        txtAnswer5 = new javax.swing.JTextField();
+        btnSubmit = new javax.swing.JButton();
+        lblOutFinal = new javax.swing.JLabel();
+        lblCheck1 = new javax.swing.JLabel();
+        lblCheck2 = new javax.swing.JLabel();
+        lblCheck3 = new javax.swing.JLabel();
+        lblCheck4 = new javax.swing.JLabel();
+        lblCheck5 = new javax.swing.JLabel();
+        lblCross1 = new javax.swing.JLabel();
+        lblCross2 = new javax.swing.JLabel();
+        lblCross3 = new javax.swing.JLabel();
+        lblCross4 = new javax.swing.JLabel();
+        lblCross5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblTitle.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTitle.setText("Multiple Choice Quiz Variables");
 
+        lblInstructions.setText("Enter the letter of the most correct answer");
+
+        lblQ1.setText("What can be the value of a String variable?");
+
+        lblPossibleAnswers.setText("a) an integer          b) letters             c) a number with decimals");
+
+        lblQ2.setText("What can be the value of an Integer variable?");
+
+        lblPossibleAnswers2.setText("a) an number with no decimals    b) letters    c) a number with decimals");
+
+        lblQ3.setText("What can be the value of a Double variable?");
+
+        lblPossibleAnswers3.setText("a) an integer          b) letters             c) a number with decimals");
+
+        lblQ4.setText("What does \"final\" do to a variable in a code?");
+
+        lblPossibleAnswers4.setText("a) It's an integer          b) makes a variable constant        c) a number with decimals");
+
+        lblQ5.setText("What does int stand for?");
+
+        lblPossibleAnswers5.setText("a) an integer          b) letters             c) a number with decimals");
+
+        btnSubmit.setText("Submit");
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubmitActionPerformed(evt);
+            }
+        });
+
+        lblCheck1.setFont(new java.awt.Font("Stars2", 1, 10)); // NOI18N
+
+        lblCheck2.setFont(new java.awt.Font("Stars2", 1, 10)); // NOI18N
+
+        lblCheck3.setFont(new java.awt.Font("Stars2", 1, 10)); // NOI18N
+
+        lblCheck4.setFont(new java.awt.Font("Stars2", 1, 10)); // NOI18N
+
+        lblCheck5.setFont(new java.awt.Font("Stars2", 1, 10)); // NOI18N
+
+        javax.swing.GroupLayout GUIPanelLayout = new javax.swing.GroupLayout(GUIPanel);
+        GUIPanel.setLayout(GUIPanelLayout);
+        GUIPanelLayout.setHorizontalGroup(
+            GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GUIPanelLayout.createSequentialGroup()
+                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                        .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(GUIPanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblPossibleAnswers2)
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addComponent(lblQ2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtAnswer2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(lblPossibleAnswers3)
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addComponent(lblQ3)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtAnswer4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtAnswer3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addComponent(lblQ1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtAnswer1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(GUIPanelLayout.createSequentialGroup()
+                                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addGap(94, 94, 94)
+                                        .addComponent(lblTitle))
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent(lblPossibleAnswers))
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addGap(103, 103, 103)
+                                        .addComponent(lblInstructions)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(GUIPanelLayout.createSequentialGroup()
+                                .addComponent(lblCross1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblCheck1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblCheck3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(GUIPanelLayout.createSequentialGroup()
+                                .addComponent(lblCheck2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblCross2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(8, 8, 8))
+                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(GUIPanelLayout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lblOutFinal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(GUIPanelLayout.createSequentialGroup()
+                                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addComponent(lblQ5)
+                                        .addGap(241, 241, 241)
+                                        .addComponent(txtAnswer5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblQ4)
+                                        .addComponent(lblPossibleAnswers4)
+                                        .addComponent(lblPossibleAnswers5)))
+                                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addGap(30, 30, 30)
+                                        .addComponent(lblCross5, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lblCheck5, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                                        .addGap(17, 17, 17)
+                                        .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblCross3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(GUIPanelLayout.createSequentialGroup()
+                                                .addComponent(lblCross4, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(lblCheck4, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addContainerGap())
+        );
+        GUIPanelLayout.setVerticalGroup(
+            GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GUIPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblTitle)
+                .addGap(24, 24, 24)
+                .addComponent(lblInstructions)
+                .addGap(18, 18, 18)
+                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblCross1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblQ1)
+                        .addComponent(txtAnswer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCheck1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(11, 11, 11)
+                .addComponent(lblPossibleAnswers)
+                .addGap(18, 18, 18)
+                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(GUIPanelLayout.createSequentialGroup()
+                        .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lblQ2)
+                                .addComponent(txtAnswer2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblCheck2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblPossibleAnswers2))
+                    .addComponent(lblCross2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblQ3)
+                        .addComponent(txtAnswer3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCheck3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCross3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblPossibleAnswers3)
+                .addGap(18, 18, 18)
+                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblQ4)
+                        .addComponent(txtAnswer4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCheck4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCross4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblPossibleAnswers4)
+                .addGap(18, 18, 18)
+                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblQ5)
+                        .addComponent(txtAnswer5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblCheck5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCross5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblPossibleAnswers5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(GUIPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GUIPanelLayout.createSequentialGroup()
+                        .addComponent(btnSubmit)
+                        .addGap(31, 31, 31))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GUIPanelLayout.createSequentialGroup()
+                        .addComponent(lblOutFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23))))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(lblTitle)
-                .addContainerGap(84, Short.MAX_VALUE))
+            .addComponent(GUIPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblTitle)
-                .addContainerGap(267, Short.MAX_VALUE))
+            .addComponent(GUIPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
+        //declaring variables, get the text from the GUI and assign them value
+        String Answer1 = txtAnswer1.getText();
+        int aNswer1 = 0;
+        String Answer2 = txtAnswer2.getText();
+        int aNswer2 = 0;
+        String Answer3 = txtAnswer3.getText();
+        int aNswer3 = 0;
+        String Answer4 = txtAnswer4.getText();
+        int aNswer4 = 0;
+        String Answer5 = txtAnswer5.getText();
+        int aNswer5 = 0;
+        int AnswerTotal=0;
+        //Check for correct answers
+        //answer 1
+        if (Answer1.equals("b")||(Answer1.equals("B")))
+        {
+            aNswer1 = 20;
+            lblCheck1.setText("j");
+            lblCross1.setText("");
+        }
+        else 
+        {
+            aNswer1 = 0;
+            lblCross1.setText("X");
+            lblCheck1.setText("");
+        }
+        //answer 2
+        if (Answer2.equals("a")||(Answer2.equals("A")))
+        {
+            aNswer2 = 20;
+            lblCheck2.setText("j");
+            lblCross2.setText("");
+        }
+        else
+        {
+            aNswer2 = 0;
+            lblCross2.setText("X");
+            lblCheck2.setText("");
+        }
+        //answer 3
+        if (Answer3.equals("c")||(Answer3.equals("C")))
+        {
+            aNswer3 = 20;
+            lblCheck3.setText("j");
+            lblCross3.setText("");
+        }
+        else
+        {
+            aNswer3 = 0;
+            lblCross3.setText("X");
+            lblCheck3.setText("");
+        }
+        //answer 4
+        if (Answer4.equals("b")||(Answer4.equals("B")))
+        {
+            aNswer4 = 20;
+            lblCheck4.setText("j");
+            lblCross4.setText("");
+        }
+        else
+        {
+            aNswer4 = 0;
+            lblCross4.setText("X");
+            lblCheck4.setText("");
+        }
+        //answer 5
+        if (Answer5.equals("a")||(Answer5.equals("A")))
+        {
+            aNswer5 = 20;
+            lblCheck5.setText("j");
+            lblCross5.setText("");
+        }
+        else
+        {
+            aNswer5 = 0;
+            lblCross5.setText("X");
+            lblCheck5.setText("");
+        }
+        //calculations and final output
+        AnswerTotal = aNswer1 + aNswer2 + aNswer3 + aNswer4 +aNswer5;
+        if (AnswerTotal < 60)
+        {
+            lblOutFinal.setText("Sorry, you failed. Your mark is "+AnswerTotal+"%");
+        }
+        else if (AnswerTotal >= 60)
+        {
+            lblOutFinal.setText("Contratulations, you passed. Your mark is "+AnswerTotal+"%");
+        }
+    }//GEN-LAST:event_btnSubmitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -89,6 +393,36 @@ public class MultipleChoice extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel GUIPanel;
+    private javax.swing.JButton btnSubmit;
+    private javax.swing.JOptionPane jOptionPane1;
+    private javax.swing.JLabel lblCheck1;
+    private javax.swing.JLabel lblCheck2;
+    private javax.swing.JLabel lblCheck3;
+    private javax.swing.JLabel lblCheck4;
+    private javax.swing.JLabel lblCheck5;
+    private javax.swing.JLabel lblCross1;
+    private javax.swing.JLabel lblCross2;
+    private javax.swing.JLabel lblCross3;
+    private javax.swing.JLabel lblCross4;
+    private javax.swing.JLabel lblCross5;
+    private javax.swing.JLabel lblInstructions;
+    private javax.swing.JLabel lblOutFinal;
+    private javax.swing.JLabel lblPossibleAnswers;
+    private javax.swing.JLabel lblPossibleAnswers2;
+    private javax.swing.JLabel lblPossibleAnswers3;
+    private javax.swing.JLabel lblPossibleAnswers4;
+    private javax.swing.JLabel lblPossibleAnswers5;
+    private javax.swing.JLabel lblQ1;
+    private javax.swing.JLabel lblQ2;
+    private javax.swing.JLabel lblQ3;
+    private javax.swing.JLabel lblQ4;
+    private javax.swing.JLabel lblQ5;
     private javax.swing.JLabel lblTitle;
+    private javax.swing.JTextField txtAnswer1;
+    private javax.swing.JTextField txtAnswer2;
+    private javax.swing.JTextField txtAnswer3;
+    private javax.swing.JTextField txtAnswer4;
+    private javax.swing.JTextField txtAnswer5;
     // End of variables declaration//GEN-END:variables
 }
