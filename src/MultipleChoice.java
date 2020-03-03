@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * March 3rd, 2020
+ * Multiple choice quiz unit 1 summative
+ * Erika Graham
  */
 
 /**
